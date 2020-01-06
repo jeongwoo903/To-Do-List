@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Hi+Melody&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap");
 
 @keyframes jelly {
   from {
@@ -32,7 +32,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  font-family: "Hi Melody", cursive;
+  font-family: "Yeon Sung", cursive;
 }
 /* linear-gradient(45deg, #ff8806 0%, #fb07f3 100%); */
 #stage {
@@ -69,7 +69,7 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 55px;
+  top: 70px;
   border: 3px solid #a52a2a;
   border-radius: 10px;
   width: 45vw;
@@ -90,9 +90,9 @@ body {
   border: none;
   outline: none;
   width: 180px;
-  height: 20px;
-  font-family: "Hi Melody", cursive;
-  font-size: 13px;
+  height: 30px;
+  font-family: "Yeon Sung", cursive;
+  font-size: 15px;
 }
 
 .add {
@@ -100,13 +100,13 @@ body {
   cursor: pointer;
   outline: none;
   width: 50px;
-  height: 20px;
+  height: 30px;
   background: #ff6262;
   border: 2px solid #6b2a2a;
   border-radius: 3px;
   margin-left: 30px;
-  font-family: "Hi Melody", cursive;
-  font-size: 13px;
+  font-family: "Yeon Sung", cursive;
+  font-size: 15px;
 }
 
 .clear {
@@ -114,13 +114,13 @@ body {
   cursor: pointer;
   outline: none;
   width: 80px;
-  height: 20px;
+  height: 30px;
   background: #ff6262;
   border: 2px solid #6b2a2a;
   border-radius: 3px;
   margin-left: 10px;
-  font-family: "Hi Melody", cursive;
-  font-size: 13px;
+  font-family: "Yeon Sung", cursive;
+  font-size: 15px;
 }
 
 .content-container {
@@ -133,7 +133,7 @@ body {
   width: 45vw;
   max-width: 410px;
   min-width: 350px;
-  height: 30px;
+  height: 55px;
   background-color: #ffffff;
 }
 
