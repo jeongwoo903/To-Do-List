@@ -1,19 +1,25 @@
 let textElem = document.querySelector(".text");
 const btnAdd = document.querySelector(".add");
-const btnRemove = document.querySelector(".remove");
+const btnClear = document.querySelector(".clear");
 const container = document.querySelector(".text-file");
 
 function AddHandler() {
   const listElem = document.createElement("div");
 
+  const btnRemove = document.createElement("input");
+  btnRemove.type = "button";
+  btnRemove.value = "X";
+  btnRemove.classList.add("btn-remove");
+  listElem.appendChild(btnRemove);
+
   const checkBox = document.createElement("input");
   checkBox.type = "checkbox";
-  checkBox.style.marginLeft = "15px";
+  checkBox.classList.add("checkbox");
   listElem.appendChild(checkBox);
 
   const saveText = document.createElement("p");
   saveText.innerText = textElem.value;
-  saveText.style.marginLeft = "15px";
+  saveText.style.marginLeft = "6px";
   listElem.appendChild(saveText);
 
   container.appendChild(listElem);
@@ -21,20 +27,26 @@ function AddHandler() {
   textElem.value = "";
 
   checkBox.onclick = function() {
-    console.log(checkBox.value);
-    if (checkBox.value == "on") {
-      listElem.style.textDecoration = "line-through";
-      checkBox.value = "off";
-    } else if (checkBox.value == "off") {
-      listElem.style.textDecoration = "initial";
-      checkBox.value = "on";
+    if (checkBox.checked === true) {
+      saveText.style.textDecoration = "line-through";
+      saveText.style.color = "red";
+    } else {
+      saveText.style.textDecoration = "initial";
+      saveText.style.color = "black";
     }
+  };
+
+  btnRemove.onclick = function(e) {
+    let remove = e.target.parentNode;
+    container.removeChild(remove);
   };
 }
 
-function RemoveHandler() {
-  container.removeChild(container.lastChild);
+function ClearHandler() {
+  while (container.hasChildNodes()) {
+    container.removeChild(container.firstChild);
+  }
 }
 
 btnAdd.addEventListener("click", AddHandler);
-btnRemove.addEventListener("click", RemoveHandler);
+btnClear.addEventListener("click", ClearHandler);
