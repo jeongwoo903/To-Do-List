@@ -39,14 +39,14 @@ body {
   align-items: center;
   border-radius: 16px;
   position: absolute;
+  box-shadow: 0 10px 10px #6b2a2a;
+  background-color: antiquewhite;
   width: 50vw;
   height: 70vh;
   min-width: 380px;
   min-height: 680px;
-  max-width: 380px;
+  max-width: 450px;
   max-height: 680px;
-  box-shadow: 0 10px 10px #6b2a2a;
-  background-color: antiquewhite;
 }
 
 .container {
@@ -60,6 +60,12 @@ body {
   max-width: 410px;
   max-height: 630px;
   border-radius: 16px;
+}
+.content-container div {
+  font-size: 8px;
+  display: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
@@ -89,6 +95,7 @@ body {
   background: #ff6262;
   border: 2px solid #6b2a2a;
   border-radius: 3px;
+  margin-left: 10px;
 }
 
 .content-container {
@@ -98,7 +105,9 @@ body {
   position: absolute;
   border: 3px solid #a52a2a;
   border-radius: 10px;
-  width: 320px;
+  width: 45vw;
+  max-width: 410px;
+  min-width: 350px;
   height: 30px;
   background-color: #ffffff;
 }
@@ -110,7 +119,9 @@ body {
   top: 55px;
   border: 3px solid #a52a2a;
   border-radius: 10px;
-  width: 320px;
+  width: 45vw;
+  max-width: 410px;
+  min-width: 350px;
   height: 555px;
   overflow: scroll;
   background-color: #ffffff;
