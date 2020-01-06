@@ -1,0 +1,84 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#stage {
+  background: linear-gradient(45deg, #ff8806 0%, #fb07f3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 16px;
+  position: absolute;
+  width: 50vw;
+  height: 70vh;
+  min-width: 380px;
+  min-height: 680px;
+  max-width: 450px;
+  max-height: 680px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  width: 45vw;
+  height: 65vh;
+  min-width: 350px;
+  min-height: 630px;
+  max-width: 410px;
+  max-height: 630px;
+  border: 2px solid black;
+  border-radius: 16px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 320px;
+  height: 30px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 55px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 320px;
+  height: 555px;
+  overflow: scroll;
+}
+
+.text-file div {
+  overflow-x: scroll;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+}
+
+.text-file div:last-child {
+  margin-bottom: 15px;
+}
+
+.text-file div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
